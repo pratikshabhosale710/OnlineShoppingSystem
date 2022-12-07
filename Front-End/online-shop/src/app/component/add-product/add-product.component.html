@@ -1,0 +1,42 @@
+<div class="container col-md-6">
+    <h1 style="color:deeppink;text-align: center;">Add Product</h1>
+     <form (ngSubmit)="add()">
+      <div class="row">
+       <div class="col-md-6 mb-4">
+         <label for="exampleFormControlInput1" class="form-label"><b>Product Id</b> </label>
+         <input type="text" class="form-control" id="productId" name="productId" [(ngModel)]="product.productId">
+       </div>
+       <div class="col-md-6 mb-4">
+         <label for="exampleFormControlInput1" class="form-label"><b>Product Name</b></label>
+         <input type="text" class="form-control" id="productName" name="productName" [(ngModel)]="product.title" >
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-6 mb-4">
+         <label for="exampleFormControlInput1" class="form-label"><b>Price</b></label>
+         <input type="text" class="form-control" id="price" name="price" [(ngModel)]="product.price" >
+       </div>
+       <div class="col-md-6 mb-4">
+         <label for="exampleFormControlInput1" class="form-label"><b>Description</b></label>
+         <input type="text" class="form-control" id="description" name="description" [(ngModel)]="product.description">
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-6 mb-4">
+         <label for="exampleFormControlInput1" class="form-label"><b>Category</b></label>
+         <input type="text" class="form-control" id="category" name="category" [(ngModel)]="product.category" >
+       </div>
+       <div class="col-md-6 mb-4">
+         <label for="exampleFormControlInput1" class="form-label"><b>Rating</b></label>
+         <input type="text" class="form-control" id="rating" name="rating" [(ngModel)]="product.rating" >
+       </div>
+      </div>
+     <button type="submit" style=" background-color:deeppink;color: white;font-weight: bolder;border: none;border-radius: 10px; height: 40px;width: 100px;">
+      <b>Add</b></button>
+     </form>
+   </div>
+  
+  
+   
+  
+  

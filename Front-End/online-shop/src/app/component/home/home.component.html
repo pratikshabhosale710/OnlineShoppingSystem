@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> ₹{{item.price}}</p>
+                <p style="width: 100%; background-color:deeppink;color:white;text-align: center;margin-bottom: 0%;height: 40px;font-weight: bolder;">
+                    {{item.rating}} <i class="fas fa-star"></i></p>
+            </div>
+        </ng-container>
+
+    </div>
+</div>
